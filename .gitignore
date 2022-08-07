@@ -1,0 +1,6 @@
+data/*
+!data/placeholder.txt
+logs/*
+!logs/placeholder.txt
+models/*
+!models/placeholder.txt
