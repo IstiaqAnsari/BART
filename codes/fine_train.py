@@ -100,7 +100,9 @@ def train(args):
                       'scheduler_state_dict':scheduler.state_dict()}, f'../models/{args.key}/current_state.pth')
             
        
-          
+        torch.save({'model_state_dict':model.state_dict(),
+                      'optimizer_state_dict':optimizer.state_dict(),
+                      'scheduler_state_dict':scheduler.state_dict()}, f'../models/{args.key}/current_state.pth')
         # valid_loss, valid_acc, valid_acc_topk = evaluate(model, valid_dataloader, DEVICE, loss_func)
         valid_loss, valid_acc, valid_acc_topk = 0.10101, 88.88, 88.88
         
@@ -145,16 +147,15 @@ if __name__ == '__main__':
     parser.add_argument('--proto', default=None, type=int, help='batch size used for training')
     parser.add_argument('--stage', default="Synthetic", type=str, help='fine tuning stage, synthetic or gold annonated sentence pair')
     args = parser.parse_args()
-    args.key = args.key + "_Gold"
     os.makedirs(f'../models/{args.key}',exist_ok=True)
     train(args)
 
-# nohup python fine_train.py --key FINE_BART_SYNT --epochs 2 --device 1 --vs 50000 --proto 2000  > ../logs/test_run.log &
-# nohup python fine_train.py --key FINE_BART_SYNT --epochs 2 --device 1 --vs 50000 --proto 1000000  > ../logs/test_run.log &
-# nohup python fine_train.py --key FINE_BART_SYNT --epochs 2 --device 1 --vs 50000 --resume_from "../models/BART_TEST_RUN/current_state.pth" > ../logs/test_run.log &
-# nohup python fine_train.py --key FINE_BART_SYNT --epochs 2 --device 1 --vs 50000 --resume_from "../models/FINE_BART_SYNT/current_state.pth" > ../logs/test_run.log &
-# nohup python fine_train.py --key FINE_BART_SYNT --epochs 2 --device 1 --vs 50000 --resume_from "../models/FINE_BART_SYNT_Gold/current_state.pth" > ../logs/test_run.log &
+# nohup python fine_train.py --key FINE_BART_SYNT --epochs 2 --device 2 --vs 50000 --proto 2000  > ../logs/test_run.log &
+# nohup python fine_train.py --key FINE_BART_SYNT --epochs 2 --device 2 --vs 50000 --proto 1000000  > ../logs/test_run.log &
+# nohup python fine_train.py --key FINE_BART_SYNT --epochs 2 --device 2 --vs 50000 --resume_from "../models/BART_TEST_RUN/current_state.pth" > ../logs/test_run.log &
+# nohup python fine_train.py --key FINE_BART_SYNT --epochs 2 --device 2 --vs 50000 --resume_from "../models/FINE_BART_SYNT/current_state.pth" > ../logs/test_run.log &
+# nohup python fine_train.py --key FINE_BART_SYNT --epochs 2 --device 2 --vs 50000 --resume_from "../models/FINE_BART_SYNT/current_state.pth" > ../logs/fine_tune.log &
 
 ## FIne tune on gold dataset 
 # nohup python fine_train.py --key FINE_BART_ANNOTATED --epochs 5 --device 2 --stage Gold --batch_size 8 --vs 50000 --resume_from "../models/BART_TEST_RUN/current_state.pth" > ../logs/fine_tune_gold.log &
-# nohup python fine_train.py --key FINE_BART_ANNOTATED --epochs 5 --device 2 --stage Gold --batch_size 8 --vs 50000 --resume_from "../models/FINE_BART_ANNOTATED_Gold/current_state.pth" > ../logs/fine_tune_gold.log &
+# nohup python fine_train.py --key FINE_BART_Gold_afterSynth --epochs 5 --device 3 --stage Gold --batch_size 8 --vs 50000 --resume_from "../models/FINE_BART_SYNT/current_state.pth" > ../logs/fine_tune_gold.log &
