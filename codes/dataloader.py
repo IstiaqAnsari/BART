@@ -113,7 +113,11 @@ def get_dataloaders_pretrain(vocab_size, batch_size = 32,prototype = None):
     assert (vocab_size in [1000,3000,5000,10000,25000,50000,100000, 200000]) , "Vocab size {vs} not available for BPEmb".format(vs = vocab_size)
         
     
-    train_df = pd.read_csv('/home/sabbir_j/codes/BERT-MLM-FINAL-PHASE/data/train_final.csv',nrows = prototype)
+    # train_df = pd.read_csv('/home/sabbir_j/codes/BERT-MLM-FINAL-PHASE/data/train_final.csv',nrows = prototype)
+    
+    train_df = pd.read_csv('/home/sabbir_j/codes/BERT-MLM-FINAL-PHASE/data/sentence_queue_20220819_punctuation_filtered.csv',sep="\t",nrows = prototype)
+    train_df = train_df[train_df['all_correct']==1]
+    
     valid_df = pd.read_csv('/home/sabbir_j/codes/BERT-MLM-FINAL-PHASE/data/valid_final.csv',nrows = prototype)
 
 
