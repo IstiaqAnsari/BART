@@ -49,3 +49,40 @@ RuntimeError: Cannot enter into task <Task pending name='Task-8' coro=<HTTP1Serv
 [W 09:53:30.556 NotebookApp] WebSocket ping timeout after 119988 ms.
 [I 09:53:35.561 NotebookApp] Starting buffering for 1303ea51-efbf-460c-8ee6-dcebd037cda9:ee74972c7ca14ecb89860b63427e1e2f
 [I 09:56:15.439 NotebookApp] Restoring connection for 1303ea51-efbf-460c-8ee6-dcebd037cda9:ee74972c7ca14ecb89860b63427e1e2f
+[I 10:03:26.777 NotebookApp] Saving file at /model_analysis.ipynb
+[W 10:03:26.778 NotebookApp] Notebook model_analysis.ipynb is not trusted
+[I 12:20:30.725 NotebookApp] Kernel shutdown: 1303ea51-efbf-460c-8ee6-dcebd037cda9
+[I 12:20:30.870 NotebookApp] Starting buffering for 1303ea51-efbf-460c-8ee6-dcebd037cda9:ee74972c7ca14ecb89860b63427e1e2f
+[I 12:20:30.877 NotebookApp] Kernel shutdown: 1303ea51-efbf-460c-8ee6-dcebd037cda9
+[W 12:54:40.119 NotebookApp] Notebook dataloading.ipynb is not trusted
+[I 12:54:40.987 NotebookApp] Kernel started: d1253860-f162-4dc7-9b72-991a5066d313, name: python3
+[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
+[IPKernelApp] WARNING | No such comm: 509062f4-8dc8-4ee1-b229-89ee42c75edc
+[I 12:56:41.461 NotebookApp] Saving file at /dataloading.ipynb
+[W 12:56:41.462 NotebookApp] Notebook dataloading.ipynb is not trusted
+[I 13:02:41.010 NotebookApp] Saving file at /dataloading.ipynb
+[W 13:02:41.011 NotebookApp] Notebook dataloading.ipynb is not trusted
+[I 13:04:40.981 NotebookApp] Saving file at /dataloading.ipynb
+[W 13:04:40.982 NotebookApp] Notebook dataloading.ipynb is not trusted
+[I 13:06:40.986 NotebookApp] Saving file at /dataloading.ipynb
+[W 13:06:40.987 NotebookApp] Notebook dataloading.ipynb is not trusted
+[I 13:10:40.988 NotebookApp] Saving file at /dataloading.ipynb
+[W 13:10:40.990 NotebookApp] Notebook dataloading.ipynb is not trusted
+[I 13:12:41.217 NotebookApp] Saving file at /dataloading.ipynb
+[W 13:12:41.218 NotebookApp] Notebook dataloading.ipynb is not trusted
+[I 13:14:40.985 NotebookApp] Saving file at /dataloading.ipynb
+[W 13:14:40.986 NotebookApp] Notebook dataloading.ipynb is not trusted
+[I 14:27:08.215 NotebookApp] Starting buffering for d1253860-f162-4dc7-9b72-991a5066d313:b73f6404c0134ed9829ec715448a85c3
+[I 14:20:01.242 NotebookApp] 302 GET /tree? (127.0.0.1) 78.750000ms
+[I 14:20:05.753 NotebookApp] 302 POST /login?next=%2Ftree%3F (127.0.0.1) 562.000000ms
+[W 14:20:55.652 NotebookApp] Notebook dataloading.ipynb is not trusted
+[I 14:22:56.343 NotebookApp] Saving file at /dataloading.ipynb
+[W 14:22:56.345 NotebookApp] Notebook dataloading.ipynb is not trusted
+[I 14:24:56.304 NotebookApp] Saving file at /dataloading.ipynb
+[W 14:24:56.305 NotebookApp] Notebook dataloading.ipynb is not trusted
+[I 14:28:56.307 NotebookApp] Saving file at /dataloading.ipynb
+[W 14:28:56.308 NotebookApp] Notebook dataloading.ipynb is not trusted
+[I 14:30:56.300 NotebookApp] Saving file at /dataloading.ipynb
+[W 14:30:56.301 NotebookApp] Notebook dataloading.ipynb is not trusted
+[W 15:24:56.472 NotebookApp] WebSocket ping timeout after 119991 ms.
+[I 15:25:01.484 NotebookApp] Starting buffering for d1253860-f162-4dc7-9b72-991a5066d313:34a7e8db2eed48058fc1a5d7fd210c3c
