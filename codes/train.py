@@ -133,7 +133,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--key', default='test', type=str, help='name of experiment')
     parser.add_argument('--epochs', default=100, type=int, help='number of epochs for training')
-    parser.add_argument('--batch_size', default=4, type=int, help='batch size used for training')
+    parser.add_argument('--batch_size', default=8, type=int, help='batch size used for training')
     parser.add_argument('--grad_accum_steps', default=32, type=int, help='number of gradient accumulation steps')
     parser.add_argument('--resume_from', default=None, help='resume from this ckpt')
     parser.add_argument('--device', default=0,type=int, help='gpu index to use for training')
