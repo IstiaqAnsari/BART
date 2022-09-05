@@ -1,88 +1,12 @@
-[W 2022-08-24 16:29:49.217 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2022-08-24 16:29:49.217 LabApp] 'allow_root' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2022-08-24 16:29:49.217 LabApp] 'allow_root' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2022-08-24 16:29:49.217 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2022-08-24 16:29:49.217 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[I 2022-08-24 16:29:49.233 LabApp] JupyterLab extension loaded from /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/jupyterlab
-[I 2022-08-24 16:29:49.233 LabApp] JupyterLab application directory is /home/sabbir_j/anaconda3/envs/bnlp_env/share/jupyter/lab
-[I 16:29:49.241 NotebookApp] The port 8888 is already in use, trying another port.
-[I 16:29:49.242 NotebookApp] Serving notebooks from local directory: /home/ansari/codes/spellchecker/bart/codes
-[I 16:29:49.242 NotebookApp] Jupyter Notebook 6.4.4 is running at:
-[I 16:29:49.242 NotebookApp] http://localhost:8889/
-[I 16:29:49.242 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-/home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
-  return _iterencode(o, 0)
-[W 16:31:46.215 NotebookApp] Notebook model_analysis.ipynb is not trusted
-Exception in callback <TaskStepMethWrapper object at 0x7f8953e81400>()
-handle: <Handle <TaskStepMethWrapper object at 0x7f8953e81400>()>
-Traceback (most recent call last):
-  File "/home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/asyncio/events.py", line 81, in _run
-    self._context.run(self._callback, *self._args)
-RuntimeError: Cannot enter into task <Task pending name='Task-2' coro=<HTTP1ServerConnection._server_request_loop() running at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/tornado/http1connection.py:840> cb=[IOLoop.add_future.<locals>.<lambda>() at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/tornado/ioloop.py:688]> while another task <Task pending name='Task-46' coro=<MappingKernelManager.start_kernel() running at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/notebook/services/kernels/kernelmanager.py:176> cb=[IOLoop.add_future.<locals>.<lambda>() at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/tornado/ioloop.py:688]> is being executed.
-[I 16:31:47.256 NotebookApp] Kernel started: 49615573-3757-489f-860f-e52a5270be90, name: python3
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 76003851-a0a0-490c-b499-7927c3a2102a
-/home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
-  return _iterencode(o, 0)
-[I 16:33:47.953 NotebookApp] Saving file at /model_analysis.ipynb
-[W 16:33:47.953 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[I 16:35:46.811 NotebookApp] Saving file at /model_analysis.ipynb
-[W 16:35:46.812 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[I 16:36:12.783 NotebookApp] Kernel shutdown: 49615573-3757-489f-860f-e52a5270be90
-[I 16:36:13.076 NotebookApp] Starting buffering for 49615573-3757-489f-860f-e52a5270be90:5f6a022683c54e7b8ed8448a58187c3c
-Exception in callback <TaskWakeupMethWrapper object at 0x7f8953e270d0>(<Future finis...512"\r\n\r\n'>)
-handle: <Handle <TaskWakeupMethWrapper object at 0x7f8953e270d0>(<Future finis...512"\r\n\r\n'>)>
-Traceback (most recent call last):
-  File "/home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/asyncio/events.py", line 81, in _run
-    self._context.run(self._callback, *self._args)
-RuntimeError: Cannot enter into task <Task pending name='Task-8' coro=<HTTP1ServerConnection._server_request_loop() running at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/tornado/http1connection.py:823> wait_for=<Future finished result=b'DELETE /api...7512"\r\n\r\n'> cb=[IOLoop.add_future.<locals>.<lambda>() at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/tornado/ioloop.py:688]> while another task <Task pending name='Task-186' coro=<KernelManager._async_shutdown_kernel() running at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/jupyter_client/manager.py:443>> is being executed.
-[W 09:19:10.930 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[I 09:19:11.769 NotebookApp] Kernel started: 1303ea51-efbf-460c-8ee6-dcebd037cda9, name: python3
-[I 09:21:11.668 NotebookApp] Saving file at /model_analysis.ipynb
-[W 09:21:11.669 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[I 09:23:11.665 NotebookApp] Saving file at /model_analysis.ipynb
-[W 09:23:11.666 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[I 09:25:11.885 NotebookApp] Saving file at /model_analysis.ipynb
-[W 09:25:11.886 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[I 09:27:11.811 NotebookApp] Saving file at /model_analysis.ipynb
-[W 09:27:11.812 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[W 09:53:30.556 NotebookApp] WebSocket ping timeout after 119988 ms.
-[I 09:53:35.561 NotebookApp] Starting buffering for 1303ea51-efbf-460c-8ee6-dcebd037cda9:ee74972c7ca14ecb89860b63427e1e2f
-[I 09:56:15.439 NotebookApp] Restoring connection for 1303ea51-efbf-460c-8ee6-dcebd037cda9:ee74972c7ca14ecb89860b63427e1e2f
-[I 10:03:26.777 NotebookApp] Saving file at /model_analysis.ipynb
-[W 10:03:26.778 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[I 12:20:30.725 NotebookApp] Kernel shutdown: 1303ea51-efbf-460c-8ee6-dcebd037cda9
-[I 12:20:30.870 NotebookApp] Starting buffering for 1303ea51-efbf-460c-8ee6-dcebd037cda9:ee74972c7ca14ecb89860b63427e1e2f
-[I 12:20:30.877 NotebookApp] Kernel shutdown: 1303ea51-efbf-460c-8ee6-dcebd037cda9
-[W 12:54:40.119 NotebookApp] Notebook dataloading.ipynb is not trusted
-[I 12:54:40.987 NotebookApp] Kernel started: d1253860-f162-4dc7-9b72-991a5066d313, name: python3
-[IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 509062f4-8dc8-4ee1-b229-89ee42c75edc
-[I 12:56:41.461 NotebookApp] Saving file at /dataloading.ipynb
-[W 12:56:41.462 NotebookApp] Notebook dataloading.ipynb is not trusted
-[I 13:02:41.010 NotebookApp] Saving file at /dataloading.ipynb
-[W 13:02:41.011 NotebookApp] Notebook dataloading.ipynb is not trusted
-[I 13:04:40.981 NotebookApp] Saving file at /dataloading.ipynb
-[W 13:04:40.982 NotebookApp] Notebook dataloading.ipynb is not trusted
-[I 13:06:40.986 NotebookApp] Saving file at /dataloading.ipynb
-[W 13:06:40.987 NotebookApp] Notebook dataloading.ipynb is not trusted
-[I 13:10:40.988 NotebookApp] Saving file at /dataloading.ipynb
-[W 13:10:40.990 NotebookApp] Notebook dataloading.ipynb is not trusted
-[I 13:12:41.217 NotebookApp] Saving file at /dataloading.ipynb
-[W 13:12:41.218 NotebookApp] Notebook dataloading.ipynb is not trusted
-[I 13:14:40.985 NotebookApp] Saving file at /dataloading.ipynb
-[W 13:14:40.986 NotebookApp] Notebook dataloading.ipynb is not trusted
-[I 14:27:08.215 NotebookApp] Starting buffering for d1253860-f162-4dc7-9b72-991a5066d313:b73f6404c0134ed9829ec715448a85c3
-[I 14:20:01.242 NotebookApp] 302 GET /tree? (127.0.0.1) 78.750000ms
-[I 14:20:05.753 NotebookApp] 302 POST /login?next=%2Ftree%3F (127.0.0.1) 562.000000ms
-[W 14:20:55.652 NotebookApp] Notebook dataloading.ipynb is not trusted
-[I 14:22:56.343 NotebookApp] Saving file at /dataloading.ipynb
-[W 14:22:56.345 NotebookApp] Notebook dataloading.ipynb is not trusted
-[I 14:24:56.304 NotebookApp] Saving file at /dataloading.ipynb
-[W 14:24:56.305 NotebookApp] Notebook dataloading.ipynb is not trusted
-[I 14:28:56.307 NotebookApp] Saving file at /dataloading.ipynb
-[W 14:28:56.308 NotebookApp] Notebook dataloading.ipynb is not trusted
-[I 14:30:56.300 NotebookApp] Saving file at /dataloading.ipynb
-[W 14:30:56.301 NotebookApp] Notebook dataloading.ipynb is not trusted
-[W 15:24:56.472 NotebookApp] WebSocket ping timeout after 119991 ms.
-[I 15:25:01.484 NotebookApp] Starting buffering for d1253860-f162-4dc7-9b72-991a5066d313:34a7e8db2eed48058fc1a5d7fd210c3c
+[W 2022-09-05 13:15:54.569 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-05 13:15:54.569 LabApp] 'allow_root' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-05 13:15:54.569 LabApp] 'allow_root' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-05 13:15:54.570 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-05 13:15:54.570 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2022-09-05 13:15:54.587 LabApp] JupyterLab extension loaded from /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/jupyterlab
+[I 2022-09-05 13:15:54.587 LabApp] JupyterLab application directory is /home/sabbir_j/anaconda3/envs/bnlp_env/share/jupyter/lab
+[I 13:15:54.595 NotebookApp] The port 8888 is already in use, trying another port.
+[I 13:15:54.596 NotebookApp] Serving notebooks from local directory: /home/ansari/codes/spellchecker/bart/codes
+[I 13:15:54.596 NotebookApp] Jupyter Notebook 6.4.4 is running at:
+[I 13:15:54.596 NotebookApp] http://localhost:8889/
+[I 13:15:54.596 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
