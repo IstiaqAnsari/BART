@@ -115,7 +115,7 @@ def get_dataloaders_pretrain(vocab_size, batch_size = 32,prototype = None):
     
     # train_df = pd.read_csv('/home/sabbir_j/codes/BERT-MLM-FINAL-PHASE/data/train_final.csv',nrows = prototype)
     
-    train_df = pd.read_csv('/home/sabbir_j/codes/BERT-MLM-FINAL-PHASE/data/sentence_queue_20220819_punctuation_filtered.csv',sep="\t",nrows = prototype)
+    train_df = pd.read_csv('/home/sabbir_j/codes/BERT-MLM-FINAL-PHASE/data/sentence_queue_20220830_filtered.csv',sep="\t",nrows = prototype)
     train_df = train_df[train_df['all_correct']==1]
     train_df['len'] = train_df.apply(lambda x: len(x['content']), axis = 1)
     train_df = train_df[train_df['len'] < 512]

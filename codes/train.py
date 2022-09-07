@@ -149,3 +149,5 @@ if __name__ == '__main__':
 # nohup python train.py --key BART_TEST_RUN --epochs 2 --device 1 --vs 50000 --resume_from "../models/BART_TEST_RUN/current_state.pth" > ../logs/test_run.log &
 
 # nohup python train.py --key BART_PRETRAIN_REFINED_DATA --epochs 2 --device 2 --vs 50000  > ../logs/pretrain_refined_data.log &
+
+# nohup python train.py --key Char_BART_PreTest --epochs 2 --device 2 --vs 200 --resume_from ../models/Char_BART_PreTest/current_state.pth > ../logs/char_bart_test.log &
