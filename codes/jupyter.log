@@ -1,51 +1,54 @@
-[W 2022-08-24 16:29:49.217 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2022-08-24 16:29:49.217 LabApp] 'allow_root' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2022-08-24 16:29:49.217 LabApp] 'allow_root' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2022-08-24 16:29:49.217 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2022-08-24 16:29:49.217 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[I 2022-08-24 16:29:49.233 LabApp] JupyterLab extension loaded from /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/jupyterlab
-[I 2022-08-24 16:29:49.233 LabApp] JupyterLab application directory is /home/sabbir_j/anaconda3/envs/bnlp_env/share/jupyter/lab
-[I 16:29:49.241 NotebookApp] The port 8888 is already in use, trying another port.
-[I 16:29:49.242 NotebookApp] Serving notebooks from local directory: /home/ansari/codes/spellchecker/bart/codes
-[I 16:29:49.242 NotebookApp] Jupyter Notebook 6.4.4 is running at:
-[I 16:29:49.242 NotebookApp] http://localhost:8889/
-[I 16:29:49.242 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 2022-09-12 11:57:15.242 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-12 11:57:15.242 LabApp] 'allow_root' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-12 11:57:15.242 LabApp] 'allow_root' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-12 11:57:15.242 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2022-09-12 11:57:15.242 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[I 2022-09-12 11:57:15.260 LabApp] JupyterLab extension loaded from /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/jupyterlab
+[I 2022-09-12 11:57:15.260 LabApp] JupyterLab application directory is /home/sabbir_j/anaconda3/envs/bnlp_env/share/jupyter/lab
+[I 11:57:15.270 NotebookApp] Serving notebooks from local directory: /home/ansari/codes/spellchecker/bart/codes
+[I 11:57:15.270 NotebookApp] Jupyter Notebook 6.4.4 is running at:
+[I 11:57:15.270 NotebookApp] http://localhost:8888/
+[I 11:57:15.270 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 11:57:37.794 NotebookApp] 302 GET / (127.0.0.1) 1.110000ms
+[I 11:57:37.814 NotebookApp] 302 GET /tree? (127.0.0.1) 1.390000ms
+[I 11:57:42.147 NotebookApp] 302 POST /login?next=%2Ftree%3F (127.0.0.1) 340.520000ms
 /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
   return _iterencode(o, 0)
-[W 16:31:46.215 NotebookApp] Notebook model_analysis.ipynb is not trusted
-Exception in callback <TaskStepMethWrapper object at 0x7f8953e81400>()
-handle: <Handle <TaskStepMethWrapper object at 0x7f8953e81400>()>
+[W 11:58:01.444 NotebookApp] Notebook model_analysis.ipynb is not trusted
+Exception in callback <TaskWakeupMethWrapper object at 0x7fc12f27c5b0>(<Future finis...682"\r\n\r\n'>)
+handle: <Handle <TaskWakeupMethWrapper object at 0x7fc12f27c5b0>(<Future finis...682"\r\n\r\n'>)>
 Traceback (most recent call last):
   File "/home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/asyncio/events.py", line 81, in _run
     self._context.run(self._callback, *self._args)
-RuntimeError: Cannot enter into task <Task pending name='Task-2' coro=<HTTP1ServerConnection._server_request_loop() running at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/tornado/http1connection.py:840> cb=[IOLoop.add_future.<locals>.<lambda>() at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/tornado/ioloop.py:688]> while another task <Task pending name='Task-46' coro=<MappingKernelManager.start_kernel() running at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/notebook/services/kernels/kernelmanager.py:176> cb=[IOLoop.add_future.<locals>.<lambda>() at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/tornado/ioloop.py:688]> is being executed.
-[I 16:31:47.256 NotebookApp] Kernel started: 49615573-3757-489f-860f-e52a5270be90, name: python3
+RuntimeError: Cannot enter into task <Task pending name='Task-9' coro=<HTTP1ServerConnection._server_request_loop() running at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/tornado/http1connection.py:823> wait_for=<Future finished result=b'GET /api/co...e682"\r\n\r\n'> cb=[IOLoop.add_future.<locals>.<lambda>() at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/tornado/ioloop.py:688]> while another task <Task pending name='Task-2' coro=<KernelManager._async_start_kernel() running at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/jupyter_client/manager.py:332>> is being executed.
+Exception in callback <TaskWakeupMethWrapper object at 0x7fc12f2bbb50>(<Future finis...682"\r\n\r\n'>)
+handle: <Handle <TaskWakeupMethWrapper object at 0x7fc12f2bbb50>(<Future finis...682"\r\n\r\n'>)>
+Traceback (most recent call last):
+  File "/home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/asyncio/events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+RuntimeError: Cannot enter into task <Task pending name='Task-1' coro=<HTTP1ServerConnection._server_request_loop() running at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/tornado/http1connection.py:823> wait_for=<Future finished result=b'GET /kernel...e682"\r\n\r\n'> cb=[IOLoop.add_future.<locals>.<lambda>() at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/tornado/ioloop.py:688]> while another task <Task pending name='Task-2' coro=<KernelManager._async_start_kernel() running at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/jupyter_client/manager.py:336>> is being executed.
+[I 11:58:02.288 NotebookApp] Kernel started: 8a2e3e77-2c33-420f-872c-4dc0a8aa6ba1, name: python3
 [IPKernelApp] ERROR | No such comm target registered: jupyter.widget.control
-[IPKernelApp] WARNING | No such comm: 76003851-a0a0-490c-b499-7927c3a2102a
+[IPKernelApp] WARNING | No such comm: e395f1d5-a50e-4171-b8c7-8d3ec63a89d9
 /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/json/encoder.py:257: UserWarning: date_default is deprecated since jupyter_client 7.0.0. Use jupyter_client.jsonutil.json_default.
   return _iterencode(o, 0)
-[I 16:33:47.953 NotebookApp] Saving file at /model_analysis.ipynb
-[W 16:33:47.953 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[I 16:35:46.811 NotebookApp] Saving file at /model_analysis.ipynb
-[W 16:35:46.812 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[I 16:36:12.783 NotebookApp] Kernel shutdown: 49615573-3757-489f-860f-e52a5270be90
-[I 16:36:13.076 NotebookApp] Starting buffering for 49615573-3757-489f-860f-e52a5270be90:5f6a022683c54e7b8ed8448a58187c3c
-Exception in callback <TaskWakeupMethWrapper object at 0x7f8953e270d0>(<Future finis...512"\r\n\r\n'>)
-handle: <Handle <TaskWakeupMethWrapper object at 0x7f8953e270d0>(<Future finis...512"\r\n\r\n'>)>
-Traceback (most recent call last):
-  File "/home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/asyncio/events.py", line 81, in _run
-    self._context.run(self._callback, *self._args)
-RuntimeError: Cannot enter into task <Task pending name='Task-8' coro=<HTTP1ServerConnection._server_request_loop() running at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/tornado/http1connection.py:823> wait_for=<Future finished result=b'DELETE /api...7512"\r\n\r\n'> cb=[IOLoop.add_future.<locals>.<lambda>() at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/tornado/ioloop.py:688]> while another task <Task pending name='Task-186' coro=<KernelManager._async_shutdown_kernel() running at /home/sabbir_j/anaconda3/envs/bnlp_env/lib/python3.8/site-packages/jupyter_client/manager.py:443>> is being executed.
-[W 09:19:10.930 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[I 09:19:11.769 NotebookApp] Kernel started: 1303ea51-efbf-460c-8ee6-dcebd037cda9, name: python3
-[I 09:21:11.668 NotebookApp] Saving file at /model_analysis.ipynb
-[W 09:21:11.669 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[I 09:23:11.665 NotebookApp] Saving file at /model_analysis.ipynb
-[W 09:23:11.666 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[I 09:25:11.885 NotebookApp] Saving file at /model_analysis.ipynb
-[W 09:25:11.886 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[I 09:27:11.811 NotebookApp] Saving file at /model_analysis.ipynb
-[W 09:27:11.812 NotebookApp] Notebook model_analysis.ipynb is not trusted
-[W 09:53:30.556 NotebookApp] WebSocket ping timeout after 119988 ms.
-[I 09:53:35.561 NotebookApp] Starting buffering for 1303ea51-efbf-460c-8ee6-dcebd037cda9:ee74972c7ca14ecb89860b63427e1e2f
-[I 09:56:15.439 NotebookApp] Restoring connection for 1303ea51-efbf-460c-8ee6-dcebd037cda9:ee74972c7ca14ecb89860b63427e1e2f
+[I 12:00:02.202 NotebookApp] Saving file at /model_analysis.ipynb
+[W 12:00:02.203 NotebookApp] Notebook model_analysis.ipynb is not trusted
+[I 12:02:02.158 NotebookApp] Saving file at /model_analysis.ipynb
+[W 12:02:02.159 NotebookApp] Notebook model_analysis.ipynb is not trusted
+[I 12:04:02.245 NotebookApp] Saving file at /model_analysis.ipynb
+[W 12:04:02.246 NotebookApp] Notebook model_analysis.ipynb is not trusted
+[I 12:06:02.258 NotebookApp] Saving file at /model_analysis.ipynb
+[W 12:06:02.259 NotebookApp] Notebook model_analysis.ipynb is not trusted
+[I 12:35:45.522 NotebookApp] Starting buffering for 8a2e3e77-2c33-420f-872c-4dc0a8aa6ba1:99f9096a833547f8874c7fd0851bf34a
+[I 12:35:48.759 NotebookApp] Kernel restarted: 8a2e3e77-2c33-420f-872c-4dc0a8aa6ba1
+[I 12:35:48.806 NotebookApp] Restoring connection for 8a2e3e77-2c33-420f-872c-4dc0a8aa6ba1:99f9096a833547f8874c7fd0851bf34a
+[I 12:35:49.978 NotebookApp] Replaying 3 buffered messages
+[I 12:36:02.158 NotebookApp] Saving file at /model_analysis.ipynb
+[W 12:36:02.159 NotebookApp] Notebook model_analysis.ipynb is not trusted
+[I 12:37:42.805 NotebookApp] Starting buffering for 8a2e3e77-2c33-420f-872c-4dc0a8aa6ba1:99f9096a833547f8874c7fd0851bf34a
+[I 12:37:46.028 NotebookApp] Kernel restarted: 8a2e3e77-2c33-420f-872c-4dc0a8aa6ba1
+[I 12:37:46.056 NotebookApp] Restoring connection for 8a2e3e77-2c33-420f-872c-4dc0a8aa6ba1:99f9096a833547f8874c7fd0851bf34a
+[I 12:37:46.623 NotebookApp] Replaying 3 buffered messages
+[I 12:38:02.147 NotebookApp] Saving file at /model_analysis.ipynb
+[W 12:38:02.148 NotebookApp] Notebook model_analysis.ipynb is not trusted

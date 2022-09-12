@@ -18,7 +18,10 @@ class Seq2SeqPreDataset(Dataset):
     def __init__(self, sents, vocab_size):
         self.src = sents
         self.vocab_size = vocab_size
-        self.bpe = BPEmb(lang="bn", vs=self.vocab_size)
+        if (vocab_size in [1000,3000,5000,10000,25000,50000,100000, 200000]):
+            self.bpe = BPEmb(lang="bn", vs=self.vocab_size)
+        else:
+            raise Exception("Vocab size not available for BPEmb")
         # self.tokenizer = NLTKTokenizer()
         self.tokenizer = bn_tokenizer
         self.normalizeText = normalizeText
@@ -115,10 +118,15 @@ def get_dataloaders_pretrain(vocab_size, batch_size = 32,prototype = None):
     
     # train_df = pd.read_csv('/home/sabbir_j/codes/BERT-MLM-FINAL-PHASE/data/train_final.csv',nrows = prototype)
     
-    train_df = pd.read_csv('/home/sabbir_j/codes/BERT-MLM-FINAL-PHASE/data/sentence_queue_20220819_punctuation_filtered.csv',sep="\t",nrows = prototype)
+    train_df = pd.read_csv('/home/sabbir_j/codes/BERT-MLM-FINAL-PHASE/data/sentence_queue_20220830_filtered.csv',sep="\t",nrows = prototype)
     train_df = train_df[train_df['all_correct']==1]
+    train_df['len'] = train_df.apply(lambda x: len(x['content']), axis = 1)
+    train_df = train_df[train_df['len'] < 512]
+    
     
     valid_df = pd.read_csv('/home/sabbir_j/codes/BERT-MLM-FINAL-PHASE/data/valid_final.csv',nrows = prototype)
+    valid_df['len'] = valid_df.apply(lambda x: len(x['content']), axis = 1)
+    valid_df = valid_df[valid_df['len'] < 512]
 
 
     train_ds = Seq2SeqPreDataset(train_df.content.values,vocab_size = vocab_size)
