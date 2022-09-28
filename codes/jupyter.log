@@ -52,3 +52,4 @@ RuntimeError: Cannot enter into task <Task pending name='Task-1' coro=<HTTP1Serv
 [I 12:37:46.623 NotebookApp] Replaying 3 buffered messages
 [I 12:38:02.147 NotebookApp] Saving file at /model_analysis.ipynb
 [W 12:38:02.148 NotebookApp] Notebook model_analysis.ipynb is not trusted
+[I 12:47:28.580 NotebookApp] Starting buffering for 8a2e3e77-2c33-420f-872c-4dc0a8aa6ba1:99f9096a833547f8874c7fd0851bf34a
